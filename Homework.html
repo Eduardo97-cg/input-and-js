@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tarefa</h1>
+    <input type="text" id="campo_nome" placeholder="Nome">
+    <input type="text" id="campo_idade" placeholder="idade">
+    <input type="text" id="campo_sexo" placeholder="sexo">
+    <button onclick="mostraDados()">Enviar</button>
+</body>
+
+<script type="text/javascript">
+    function mostraDados() {
+        let nome = document.querySelector("#campo_nome").value;
+        let idade = document.querySelector("#campo_idade").value;
+        let sexo = document.querySelector("#campo_sexo").value;
+
+        alert(`Olá ${nome}, você tem ${idade}, e é do sexo ${sexo}` )
+    
+    }
+    
+    
+    console.log(`Olá ${nome}, você tem ${idade}, e ${sexo}`)
+    
+</script>
+</html>
+
+<!--
+    Concatenar: ato de unir diferentes tipos ou textos;
+        string = tipo primário de texto
+        ${} - sintaxe
+        
+        'string' + 'outra string'
+        `string ${variavel}` - template string
+
+    Tipos de variáveis
+        let - algo que PODE ser mnutável
+        const - constante - algo que não mutável/que não se altera 
+ -->
